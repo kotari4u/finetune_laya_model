@@ -43,7 +43,7 @@ print(result["answers"]["action"]["probabilities"]["observe"])
 print(result["answers"]["action"]["probabilities"]["stop"])
 
 
-agent = laya.load("../laya_finetuned_typed_decisions")
+agent = laya.load("../laya_lora_test")
 result = agent.predict(state, questions)
 print(result)
 print(result["answers"]["action"]["choice"])
